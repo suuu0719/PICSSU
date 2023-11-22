@@ -11,31 +11,32 @@ import android.os.Bundle;
 import android.view.Window;
 
 import com.example.picssu.databinding.ActivityMainBinding;
+import com.example.picssu.databinding.ActivityMypageBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MypageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        ActivityMypageBinding binding = ActivityMypageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.pwLayout.setOnClickListener(v -> {
-            PWDialog pwDialog = new PWDialog(MainActivity.this);
+            PWDialog pwDialog = new PWDialog(MypageActivity.this);
             pwDialog.show();
         });
 
         binding.logoutLayout.setOnClickListener(v -> {
-            LogoutDialog logoutDialog = new LogoutDialog(MainActivity.this);
+            LogoutDialog logoutDialog = new LogoutDialog(MypageActivity.this);
             logoutDialog.show();
         });
 
         binding.editProfile.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, EditProfileActivity.class));
+            startActivity(new Intent(MypageActivity.this, EditProfileActivity.class));
         });
 
         binding.infoLayout.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, InfoActivity.class));
+            startActivity(new Intent(MypageActivity.this, InfoActivity.class));
         });
 
 
