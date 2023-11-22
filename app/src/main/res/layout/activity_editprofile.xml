@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="프로필 수정"
+        android:textSize="22dp"></TextView>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/arrow_left" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/blue_btn"
+        android:fontFamily="@font/medium"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_profile">
+
+
+        <ImageView
+            android:id="@+id/bitmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/profile" />
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/bitmap">
+
+            <TextView
+                android:id="@+id/set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="이름"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="19dp"
+                android:fontFamily="@font/semibold"
+                />
+            
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="이름을 입력하세요"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_marginEnd="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/name"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divider"
+            android:scaleType="fitXY"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/introduce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="소개"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="19dp"
+                android:fontFamily="@font/semibold"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="자기소개 입력(최대 30글자)"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/introduce"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divider"
+            android:scaleType="fitXY"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

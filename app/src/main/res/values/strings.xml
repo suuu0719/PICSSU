@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PICSSU</string>
+    <string name="login">
+Login
+</string>
+    <string name="some_id">
+학번을 입력하세요
+</string>
+    <string name="development_info">"컴퓨터학부 강용석 20201451\n
+컴퓨터학부 신지은 20223138\n
+컴퓨터학부 최수빈 20223170"</string>
+</resources>
