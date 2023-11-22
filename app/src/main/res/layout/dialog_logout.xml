@@ -38,6 +38,7 @@
             android:layout_height="40dp"
             android:layout_marginEnd="7dp"
             android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
             android:background="@drawable/blue_btn"
             android:backgroundTint="#363636"
             android:fontFamily="@font/medium"
@@ -52,6 +53,7 @@
             android:layout_weight="1"
             android:background="@drawable/blue_btn"
             android:fontFamily="@font/medium"
+            android:gravity="center_vertical|center_horizontal"
             android:text="네"
             android:textColor="@color/white"
             android:textSize="14sp" />

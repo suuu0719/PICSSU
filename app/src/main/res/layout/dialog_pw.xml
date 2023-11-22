@@ -83,6 +83,7 @@
             android:layout_weight="1"
             android:background="@drawable/blue_btn"
             android:backgroundTint="#363636"
+            android:gravity="center_vertical|center_horizontal"
             android:fontFamily="@font/medium"
             android:text="취소"
             android:textColor="@color/blue"
@@ -95,6 +96,7 @@
             android:layout_weight="1"
             android:background="@drawable/blue_btn"
             android:fontFamily="@font/medium"
+            android:gravity="center_vertical|center_horizontal"
             android:text="변경"
             android:textColor="@color/white"
             android:textSize="14sp" />
