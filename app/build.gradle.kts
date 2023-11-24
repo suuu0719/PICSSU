@@ -80,6 +80,7 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
 
     // FirebaseUI for Cloud Firestore
-    implementation ("com.firebaseui:firebase-ui-firestore:8.0.0")
+    implementation ("com.firebaseui:firebase-ui-firestore:8.0.2")
     implementation ("androidx.paging:paging-runtime:3.2.1")
+
 }

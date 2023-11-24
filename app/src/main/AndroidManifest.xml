@@ -26,6 +26,9 @@
             android:name=".InfoActivity"
             android:exported="true" />
         <activity
+            android:name=".EditProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".MypageActivity"
             android:exported="true">
             <intent-filter>
