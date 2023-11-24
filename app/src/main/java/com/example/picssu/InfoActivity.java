@@ -12,6 +12,7 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
+        // 백버튼 누르면 액티비티 종료
         ImageButton back_btn = findViewById(R.id.back_btn);
         back_btn.setOnClickListener(v -> finish());
     }

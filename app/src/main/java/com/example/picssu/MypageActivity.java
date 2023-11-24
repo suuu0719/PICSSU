@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,6 +38,9 @@ public class MypageActivity extends AppCompatActivity {
         binding.infoLayout.setOnClickListener(v -> {
             startActivity(new Intent(MypageActivity.this, InfoActivity.class));
         });
+
+        // 백버튼 누르면 액티비티 종료
+        binding.backBtn.setOnClickListener(v -> finish());
 
 
     }

@@ -1,5 +1,3 @@
-import com.android.build.api.dsl.ViewBinding
-
 plugins {
     id("com.android.application")
     // Add the Google services Gradle plugin
