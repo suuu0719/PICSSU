@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.picssu.MainPageActivity">
 
+
         <TextView
             android:id="@+id/ssome_id"
             android:layout_width="wrap_content"
@@ -88,6 +89,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -206,66 +208,69 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="2dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <View
+                android:id="@+id/background"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints" />
 
-        <View
-            android:id="@+id/background"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/background"
-            app:layout_constraintBottom_toBottomOf="parent"
+            <View
+                android:id="@+id/plus"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="168dp"
+                android:layout_marginEnd="168dp"
+                android:background="@drawable/plus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
-            tools:ignore="MissingConstraints" />
+            <View
+                android:id="@+id/recent"
+                android:layout_width="57dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="304dp"
+                android:layout_marginTop="604dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/recent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/plus"
-            android:layout_width="75dp"
-            android:layout_height="70dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="168dp"
-            android:layout_marginEnd="168dp"
-            android:background="@drawable/plus"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            <View
+                android:id="@+id/thumbup2"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="604dp"
+                android:layout_marginEnd="304dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/thumbup1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/recent"
-            android:layout_width="57dp"
-            android:layout_height="48dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="304dp"
-            android:layout_marginTop="604dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="7dp"
-            android:background="@drawable/recent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/thumbup2"
-            android:layout_width="55dp"
-            android:layout_height="43dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="604dp"
-            android:layout_marginEnd="304dp"
-            android:layout_marginBottom="12dp"
-            android:background="@drawable/thumbup1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
