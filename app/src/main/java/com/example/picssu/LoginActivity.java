@@ -150,6 +150,7 @@ public class LoginActivity extends AppCompatActivity {
         editor.apply();
         Log.d("LoginActivity", preferences.getString("studentNum", ""));
         startActivity(new Intent(getApplicationContext(), MainPageActivity.class));
+        finish();
     }
 
     private void showToast(String msg) {
